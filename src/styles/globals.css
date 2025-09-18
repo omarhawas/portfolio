@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-bg text-text; }
+
+.container { @apply max-w-5xl mx-auto px-5; }
+
+.btn { @apply inline-flex items-center justify-center rounded-xl px-4 py-2 border border-border; }
+.btn-primary { @apply bg-white text-black font-medium; }
+.card { @apply rounded-2xl border border-border bg-panel p-5 hover:shadow transition; }
+.tag { @apply rounded-full border border-border px-2 py-0.5 text-xs text-sub; }
+a { @apply underline decoration-[1px] underline-offset-4; }
+a:hover { @apply opacity-80; }
+nav a { @apply no-underline; }
