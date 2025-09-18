@@ -1,12 +1,11 @@
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import Link from "next/link";
-import Nav from "@/components/Nav";
 
 export const metadata: Metadata = {
   title: "Omar Hawas — Software Developer",
   description: "JS-first developer. Next.js, React, Node, Prisma.",
-  metadataBase: new URL("https://omarhawas.com"),
+  metadataBase: new URL("https://your-domain.com"),
   openGraph: {
     title: "Omar Hawas — Software Developer",
     description: "Projects, resume, and contact.",
@@ -29,7 +28,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="border-b border-border">
           <nav className="container flex items-center justify-between py-4">
             <Link href="/" className="font-semibold tracking-tight">Omar Hawas</Link>
-            <Nav />
             <ul className="flex gap-6 text-sm text-sub">
               <li><Link href="/">Home</Link></li>
               <li><Link href="/projects">Projects</Link></li>
